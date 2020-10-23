@@ -10,6 +10,6 @@ public class Main {
         String name;
 
         while ((name = scanner.nextLine()) != null)
-            System.out.println(name.replace(": [编程入门]", "").replace(" ", ""));
+            System.out.println(name.replace(": [编程入门]", "").replace(": [二级C语言]", "").replace(" ", ""));
     }
 }
