@@ -12,7 +12,10 @@ public class 题目1029自定义函数处理素数 {
     }
 
     private static boolean prime(int n) {
-        for (int i = 2; i < Math.sqrt(n); i++){
+
+        if (n < 2) return false;
+
+        for (int i = 2; i <= Math.sqrt(n); i++){
             if (n%i == 0) return false;
         }
         return true;
